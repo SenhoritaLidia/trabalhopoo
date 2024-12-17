@@ -1,4 +1,4 @@
-# Em um dicionario no python foram colocados 2 tipos de bebidas e dentro de cada uma há um subtipo (nome da bebida) que foi implementada
+S# Em um dicionario no python foram colocados 2 tipos de bebidas e dentro de cada uma há um subtipo (nome da bebida) que foi implementada
 # e dentro desse mesmo subtipo foram colocados os sabores e ingredientes . Exemplifique o codigo criando a variavel e use os conceitos ensinados em sala.
 
 

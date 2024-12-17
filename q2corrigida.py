@@ -4,7 +4,7 @@ def funcao1():
 
 
 def funcao2(importante):
-resultado = importante * 2
+    resultado = importante * 2
     return resultado
 
 
