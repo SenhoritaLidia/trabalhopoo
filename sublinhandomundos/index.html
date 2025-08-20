@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sublinhando Mundos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfdfe;
+      margin: 0;
+      padding: 0;
+      color: #656D77;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(120deg, #e5d9f2, #f7d6e0, #d9f3f2);
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #655D8A;
+    }
+    header p {
+      margin-top: .8rem;
+      font-size: 1.3rem;
+      color: #7b6f8e;
+    }
+    header::after {
+      content: '🌸📚✨';
+      position: absolute;
+      font-size: 3rem;
+      opacity: 0.15;
+      top: 10px;
+      right: 10px;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f3f1f9;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 1.2rem;
+      text-decoration: none;
+      color: #655D8A;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0;
+      background: #f48fb1;
+      transition: 0.3s;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: #655D8A;
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #f48fb1;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* GRID CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      transition: transform .3s, box-shadow .3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      transition: transform .3s;
+    }
+    .card img:hover {
+      transform: scale(1.05);
+    }
+    .card h3 {
+      margin: 0.8rem 0 0.5rem;
+      color: #4c4c7f;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #7b6f8e;
+    }
+
+    /* ELEMENTOS GRÁFICOS ADICIONAIS */
+    .section-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.05;
+      z-index: -1;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #f3f1f9;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .9rem;
+      color: #7b6f8e;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sublinhando Mundos</h1>
+    <p>📚 Onde cada leitura floresce 🌸</p>
+  </header>
+
+  <nav>
+    <a href="#livros">Livros</a>
+    <a href="#cristaos">Cristãos</a>
+    <a href="#marcadores">Marcadores</a>
+    <a href="#recomendacoes">Recomendações</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- SEÇÃO LIVROS -->
+  <section id="livros">
+    <div class="section-bg" style="background-image:url('https://via.placeholder.com/600x400/ffd9ec/ffffff?text=Livros');"></div>
+    <h2>Livros</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/trabalhopoo/sublinhandomundos/img/amorderedenção.jpg" alt="Livro 1">
+        <h3>Livro 1</h3>
+        <p>Uma leitura fascinante para expandir horizontes.</p>
+      </div>
+      <div class="card">
+        <img src="/trabalhopoo/sublinhandomundos/img/odeusque.jpg" alt="Livro 2">
+        <h3>Livro 2</h3>
+        <p>Histórias que emocionam e inspiram 💜</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CRISTÃOS -->
+  <section id="cristaos">
+    <div class="section-bg" style="background-image:url('https://via.placeholder.com/600x400/e5d9f2/ffffff?text=Cristãos');"></div>
+    <h2>Livros Cristãos ✨</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x280/e5d9f2/655D8A?text=Cristao+1" alt="Cristão 1">
+        <h3>Fé Inabalável</h3>
+        <p>Mensagem de esperança e força espiritual.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x280/f7d6e0/655D8A?text=Cristao+2" alt="Cristão 2">
+        <h3>Caminho de Luz</h3>
+        <p>Histórias inspiradoras de fé e amor 💖</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO MARCADORES -->
+  <section id="marcadores">
+    <div class="section-bg" style="background-image:url('https://via.placeholder.com/600x400/d9f3f2/ffffff?text=Marcadores');"></div>
+    <h2>Marcadores</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200/ffd9ec/655D8A?text=Marcador+1" alt="Marcador 1">
+        <h3>Marcador Floral</h3>
+        <p>Feito à mão com muito carinho 🌸</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200/d9f3f2/655D8A?text=Marcador+2" alt="Marcador 2">
+        <h3>Marcador Minimalista</h3>
+        <p>Delicado e elegante 💜</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO RECOMENDAÇÕES -->
+  <section id="recomendacoes">
+    <div class="section-bg" style="background-image:url('https://via.placeholder.com/600x400/f7d6e0/ffffff?text=Recomendações');"></div>
+    <h2>Recomendações</h2>
+    <p>Aqui compartilho leituras que me encantaram ✨</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Recomendação 1</h3>
+        <p>Um livro que mudou minha forma de ver o mundo.</p>
+      </div>
+      <div class="card">
+        <h3>Recomendação 2</h3>
+        <p>História emocionante que vale cada página.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo Instagram 📸 <br>
+    <a href="https://instagram.com/sublinhandomundos" target="_blank">@sublinhandomundos</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sublinhando Mundos 🌸 – Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
